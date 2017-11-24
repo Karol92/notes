@@ -1,4 +1,4 @@
-.tasks{
-  width: auto;
-  height: 40px;
+.task-box{
+  @extend .box;
+  background-color: #8a6d3b;
 }

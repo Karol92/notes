@@ -1,18 +1,19 @@
 {% extends 'base.html.twig' %}
 {% block stylesheets %}
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="{{ asset('assets/stylesheets/style.css') }}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
 {% endblock %}
 {% block javascripts %}
-    <script type="text/javascript" src="{{ asset('assets/js/script.js') }}"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ asset('assets/js/script.js') }}"></script>
+
 {% endblock javascripts %}
 {% block title %}Notes{% endblock %}
 {% block body %}
@@ -20,62 +21,45 @@
     <div class="container">
         <div class="toolbox">
             <ul class="toolbox-list">
-                <li class="task" id="taskTag">Zadanie
+                <li class="task" id="task-tag">Zadanie
                     <i class="glyphicon glyphicon-plus"> </i></li>
-                <li class="question" id="questionTag">Pytanie
+                <li class="question" id="question-tag">Pytanie
                     <i class="glyphicon glyphicon-plus"> </i></li>
-                <li class="question-bool">Pytanie boolean
+                <li class="question-bool" id="question-bool-tag">Pytanie boolean
                     <i class="glyphicon glyphicon-plus"> </i></li>
             </ul>
         </div>
-        <div class="container-notes">Zadania
-            <ul>
-                <div class="tasks">
-                </div>
-            </ul>
+        <div class="container-notes">
+            <div class="question-bool-box">
+                <input type='checkbox' name='groupid' value='3'>/////////////////////////////
+                <input type="text" id="form1" class="form-control">
+                <input  name="radio" type="radio">Yes
+                <input  name="radio" type="radio">No
+                <i class="glyphicon glyphicon-trash"></i>
+            </div>
+            {#<ul>#}
+            {#<div class="tasks">#}
+            {#</div>#}
+            {#</ul>#}
         </div>
-        <div class="container-notes">Pytania
-        </div>
-        <div class="container-notes">Pytania/bool
-        </div>
-        <div class="modal">
-            <form class="form">
-                <i class="glyphicon glyphicon-remove close"></i>
-                <p class="h5 text-center mb-4">Add Task</p>
-                <div class="md-form">
-                    <i class="fa fa-tag prefix grey-text"></i>
-                    <input type="text" id="form32" class="form-control">
-                    <label>Task Title</label>
-                </div>
-                <div class="md-form">
-                    <i class="fa fa-pencil prefix grey-text"></i>
-                    <textarea type="text" class="md-textarea" style="height: 100px"></textarea>
-                    <label for="form8">Description:</label>
-                </div>
-                <div class="text-center">
-                    <button class="btn btn-default">Add Task</button>
-                </div>
-            </form>
-        </div>
+        {#<div class="modal">#}
+        {#<form class="form">#}
+        {#<i class="glyphicon glyphicon-remove close"></i>#}
+        {#<p class="h5 text-center mb-4">Add Task</p>#}
+        {#<div class="md-form">#}
+        {#<i class="fa fa-tag prefix grey-text"></i>#}
+        {#<input type="text" id="form32" class="form-control">#}
+        {#<label>Task Title</label>#}
+        {#</div>#}
+        {#<div class="md-form">#}
+        {#<i class="fa fa-pencil prefix grey-text"></i>#}
+        {#<textarea type="text" class="md-textarea" style="height: 100px"></textarea>#}
+        {#<label for="form8">Description:</label>#}
+        {#</div>#}
+        {#<div class="text-center">#}
+        {#<button class="btn btn-default">Add Task</button>#}
+        {#</div>#}
+        {#</form>#}
+        {#</div>#}
     </div>
-
-
-    <ul id="sortable1" class="connectedSortable">
-        <div class="ui-state-default">Item 1</div>
-        <div class="ui-state-default">Item 2</div>
-        <div class="ui-state-default">Item 3</div>
-        <div class="ui-state-default">Item 4</div>
-        <div class="ui-state-default">Item 5</div>
-    </ul>
-
-    <ul id="sortable2" class="connectedSortable">
-        <li class="ui-state-highlight">Item 1</li>
-        <li class="ui-state-highlight">Item 2</li>
-        <li class="ui-state-highlight">Item 3</li>
-        <li class="ui-state-highlight">Item 4</li>
-        <li class="ui-state-highlight">Item 5</li>
-    </ul>
-
-
-
 {% endblock %}

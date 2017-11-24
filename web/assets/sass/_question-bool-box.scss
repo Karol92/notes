@@ -1,0 +1,12 @@
+.question-bool-box{
+  @extend .box;
+  background-color: #ffb3b3;
+}
+.form-control{
+  opacity: 0.6;
+  height: 30px;
+  width: 40%;
+  float: left;
+  margin:10px 20px;
+
+}
