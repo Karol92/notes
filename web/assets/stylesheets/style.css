@@ -5,47 +5,46 @@ h3 {
   margin: 10px 40%;
 }
 
-/* line 6, ../sass/_global.scss */
+/* line 7, ../sass/_global.scss */
 ul {
   margin-left: 10px;
   padding: 0;
 }
 
-/* line 10, ../sass/_global.scss */
+/* line 12, ../sass/_global.scss */
 li {
   margin: 10px auto;
   color: #fcfff5;
   cursor: pointer;
 }
-/* line 14, ../sass/_global.scss */
+/* line 16, ../sass/_global.scss */
 li:hover {
   color: #000000;
 }
 
-/* line 18, ../sass/_global.scss */
+/* line 21, ../sass/_global.scss */
 .container-notes {
-  background-color: #edf1cb;
+  background-color: #E3F2FD;
   height: 500px;
   width: 40%;
-  box-shadow: 10px 10px 10px black;
-  border-radius: 10px;
+  box-shadow: 10px 10px 10px grey;
   float: left;
   margin-left: 20px;
   padding-top: 40px;
   overflow: auto;
+  min-width: 41%;
 }
 
-/* line 30, ../sass/_global.scss */
+/* line 33, ../sass/_global.scss */
 .toolbox {
   width: 15%;
-  background-color: #8a6d3b;
-  box-shadow: 10px 10px 10px black;
+  background-color: #42A5F5;
+  box-shadow: 10px 10px 10px grey;
   float: left;
   margin: auto;
-  border-radius: 10px;
 }
 
-/* line 39, ../sass/_global.scss */
+/* line 41, ../sass/_global.scss */
 body {
   background-image: url("../images/spiration-light.png");
   font-family: 'Indie Flower', cursive;
@@ -55,21 +54,6 @@ body {
 }
 
 /* line 49, ../sass/_global.scss */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-  background-color: rgba(110, 110, 110, 0.4);
-}
-
-/* line 62, ../sass/_global.scss */
 .form {
   width: 20%;
   margin: 50px auto;
@@ -78,52 +62,48 @@ body {
   background-color: #bce8f1;
 }
 
-/* line 70, ../sass/_global.scss */
+/* line 57, ../sass/_global.scss */
 .box, .task-box, .question-box, .question-bool-box {
-  width: 96%;
-  height: 15%;
-  border-bottom: 1px solid saddlebrown;
-  border-radius: 15px;
-  margin: 2px auto;
+  width: 94%;
+  min-height: 15%;
+  height: auto;
+  box-shadow: 2px 2px 2px grey;
+  margin: 4px auto;
+  background-color: #BBDEFB;
 }
 
-/* line 78, ../sass/_global.scss */
+/* line 66, ../sass/_global.scss */
 .glyphicon-trash {
   float: right;
   margin: 25px 20px;
 }
-/* line 81, ../sass/_global.scss */
+/* line 69, ../sass/_global.scss */
 .glyphicon-trash:hover {
   cursor: pointer;
-  color: darkred;
+  color: #1565C0;
 }
 
-/* line 86, ../sass/_global.scss */
+/* line 75, ../sass/_global.scss */
 input[type=text] {
   width: 30%;
   font-size: 20px;
 }
 
-/* line 91, ../sass/_global.scss */
+/* line 80, ../sass/_global.scss */
 input[type=radio] {
   margin-left: 25px;
   margin-top: 25px;
 }
 
-/* line 95, ../sass/_global.scss */
+/* line 85, ../sass/_global.scss */
 input[type=checkbox] {
   float: left;
   margin-left: 25px;
   margin-top: 25px;
 }
-/* line 99, ../sass/_global.scss */
+/* line 89, ../sass/_global.scss */
 input[type=checkbox]:checked {
   background-color: #000000;
-}
-
-/* line 104, ../sass/_global.scss */
-.redBackground {
-  background-color: #1b6d85;
 }
 
 /* line 1, ../sass/_toolbox.scss */
@@ -133,22 +113,32 @@ input[type=checkbox]:checked {
 
 /* line 1, ../sass/_task-box.scss */
 .task-box {
-  background-color: #8a6d3b;
+  background-color: #BBDEFB;
 }
 
 /* line 1, ../sass/_question-box.scss */
 .question-box {
-  background-color: #5bc0de;
+  background-color: #BBDEFB;
+}
+
+/* line 9, ../sass/_question-box.scss */
+.asd {
+  float: left;
+  height: 10%;
+  margin-top: 5px;
+  margin-left: 90px;
+  border: 1px solid black;
+  width: 60%;
 }
 
 /* line 1, ../sass/_question-bool-box.scss */
 .question-bool-box {
-  background-color: #ffb3b3;
+  background-color: #BBDEFB;
 }
 
-/* line 5, ../sass/_question-bool-box.scss */
+/* line 6, ../sass/_question-bool-box.scss */
 .form-control {
-  opacity: 0.6;
+  opacity: 0.4;
   height: 30px;
   width: 40%;
   float: left;

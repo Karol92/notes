@@ -1,4 +1,16 @@
 .question-box{
   @extend .box;
-  background-color: #5bc0de;
+  background-color: #BBDEFB;
+  &:hover{
+
+  }
+}
+
+.asd {
+  float: left;
+  height: 10%;
+  margin-top: 5px;
+  margin-left: 90px;
+  border: 1px solid black;
+  width: 60%;
 }
