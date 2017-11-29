@@ -1,16 +1,14 @@
 .question-box{
   @extend .box;
   background-color: #BBDEFB;
-  &:hover{
-
-  }
+  height: 27%;
+  overflow: auto;
 }
-
-.asd {
-  float: left;
-  height: 10%;
-  margin-top: 5px;
-  margin-left: 90px;
-  border: 1px solid black;
-  width: 60%;
+.responses{
+  opacity: 0.4;
+  height: 30px;
+  width: 40%;
+  float: right;
+  margin-top: 1px;
+  margin-right: 1%;
 }

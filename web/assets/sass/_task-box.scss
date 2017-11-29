@@ -1,4 +1,6 @@
 .task-box{
   @extend .box;
   background-color: #BBDEFB;
+  height: 27%;
+  overflow: auto;
 }

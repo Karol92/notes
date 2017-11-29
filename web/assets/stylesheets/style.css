@@ -75,7 +75,7 @@ body {
 /* line 66, ../sass/_global.scss */
 .glyphicon-trash {
   float: right;
-  margin: 25px 20px;
+  margin: 1% 1%;
 }
 /* line 69, ../sass/_global.scss */
 .glyphicon-trash:hover {
@@ -83,27 +83,42 @@ body {
   color: #1565C0;
 }
 
-/* line 75, ../sass/_global.scss */
-input[type=text] {
-  width: 30%;
-  font-size: 20px;
+/* line 74, ../sass/_global.scss */
+.glyphicon-plus {
+  float: left;
+  margin-left: 10px;
 }
 
-/* line 80, ../sass/_global.scss */
+/* line 79, ../sass/_global.scss */
+input[type=text] {
+  width: 85%;
+  font-size: 16px;
+}
+
+/* line 84, ../sass/_global.scss */
 input[type=radio] {
   margin-left: 25px;
   margin-top: 25px;
+  width: 20px;
+  height: 20px;
 }
 
-/* line 85, ../sass/_global.scss */
+/* line 91, ../sass/_global.scss */
 input[type=checkbox] {
   float: left;
-  margin-left: 25px;
-  margin-top: 25px;
+  margin: 1% 1%;
+  width: 20px;
+  height: 20px;
 }
-/* line 89, ../sass/_global.scss */
-input[type=checkbox]:checked {
-  background-color: #000000;
+
+/* line 97, ../sass/_global.scss */
+.title {
+  opacity: 0.4;
+  height: 30px;
+  width: 40%;
+  float: left;
+  margin-top: 1px;
+  margin-left: 1%;
 }
 
 /* line 1, ../sass/_toolbox.scss */
@@ -114,33 +129,28 @@ input[type=checkbox]:checked {
 /* line 1, ../sass/_task-box.scss */
 .task-box {
   background-color: #BBDEFB;
+  height: 27%;
+  overflow: auto;
 }
 
 /* line 1, ../sass/_question-box.scss */
 .question-box {
   background-color: #BBDEFB;
+  height: 27%;
+  overflow: auto;
 }
 
-/* line 9, ../sass/_question-box.scss */
-.asd {
-  float: left;
-  height: 10%;
-  margin-top: 5px;
-  margin-left: 90px;
-  border: 1px solid black;
-  width: 60%;
+/* line 7, ../sass/_question-box.scss */
+.responses {
+  opacity: 0.4;
+  height: 30px;
+  width: 40%;
+  float: right;
+  margin-top: 1px;
+  margin-right: 1%;
 }
 
 /* line 1, ../sass/_question-bool-box.scss */
 .question-bool-box {
   background-color: #BBDEFB;
-}
-
-/* line 6, ../sass/_question-bool-box.scss */
-.form-control {
-  opacity: 0.4;
-  height: 30px;
-  width: 40%;
-  float: left;
-  margin: 10px 20px;
 }
